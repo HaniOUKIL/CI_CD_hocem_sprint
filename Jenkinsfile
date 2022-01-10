@@ -34,7 +34,7 @@ stage('Docker Build and Tag') {
   stage('Publish image to Docker Hub') {
           
             steps {
-        withDockerRegistry([ credentialsId: "dockerHub", url: "" ]) {
+        // withDockerRegistry([ credentialsId: "dockerHub", url: "" ]) {
           sh  'docker push hanioukil/sprintwebapp:latest'
         //  sh  'docker push nikhilnidhi/samplewebapp:$BUILD_NUMBER' 
         }
