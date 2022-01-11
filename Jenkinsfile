@@ -47,13 +47,13 @@ stage('Docker Build and Tag') {
  
             }
         }
-      //stage('Deploy with ansible') {
+      stage('Deploy with ansible') {
 
-        //    steps
-   //{
-     //           ansiblePlaybook become: true, inventory: 'hosts', playbook: 'deploy_sprint.yml'
+            steps
+   {
+                ansiblePlaybook become: true, inventory: 'hosts', playbook: 'deploy_sprint.yml'
 
-       //     }
-        //}
+            }
+        }
     }
  }
