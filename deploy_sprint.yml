@@ -1,0 +1,15 @@
+---
+- name: deploy container sprint
+  hosts: all 
+  become: yes 
+
+
+  tasks:
+        - name: deploy sprint docker container
+          docker_container:
+                image: hanioukil/sprintwebapp:latest
+                name: sprintwebapp
+                state: started
+                auto_remove: true
+                ports:
+                        - "8003:8080"

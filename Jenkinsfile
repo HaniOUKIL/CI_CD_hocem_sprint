@@ -43,7 +43,7 @@ stage('Docker Build and Tag') {
              
             steps 
    {
-                sh "docker run -d -p 8003:8080 hanioukil/sprintwebapp"
+                sh "docker run -d -p 8003:2222 hanioukil/sprintwebapp"
  
             }
         }

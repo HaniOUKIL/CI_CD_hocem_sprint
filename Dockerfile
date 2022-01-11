@@ -1,5 +1,5 @@
-FROM tomcat:latest
+FROM java:latest
 
-ADD ./target/devOpsDemo-0.0.1-SNAPSHOT.jar /usr/local/tomcat/webapps/
-EXPOSE 8080
-CMD ["catalina.sh", "run"]
+ADD ./target/devOpsDemo-0.0.1-SNAPSHOT.jar sprintapp.jar
+EXPOSE 2222
+CMD ["java","-jar","app.jar"]
