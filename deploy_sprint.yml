@@ -12,4 +12,4 @@
                 state: started
                 auto_remove: true
                 ports:
-                        - "8003:8080"
+                        - "8003:2222"

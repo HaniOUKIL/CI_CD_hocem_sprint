@@ -51,7 +51,7 @@ stage('Docker Build and Tag') {
 
         //    steps
    //{
-     //           ansiblePlaybook become: true, inventory: 'hosts', playbook: 'deploysprint.yml'
+     //           ansiblePlaybook become: true, inventory: 'hosts', playbook: 'deploy_sprint.yml'
 
        //     }
         //}
